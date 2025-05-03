@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Fish</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen" class="overlay active">
+    <h1>🐟 Flappy Fish</h1>
+    <p>Help the fish swim through the pipes! Avoid hitting them or you'll lose!</p>
+    <p><em>Tap or press space to swim!</em></p>
+    <img src="assets/fish.png" alt="Fish" width="100" />
+    <br />
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <canvas id="gameCanvas" width="480" height="640"></canvas>
+
+  <div id="gameOverScreen" class="overlay">
+    <h1>Fish 🐟 Over</h1>
+    <p>Your Score: <span id="finalScore">0</span></p>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
